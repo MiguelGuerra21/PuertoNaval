@@ -27,4 +27,10 @@ public class EmbarcacionAMotor extends Barco
     {
         return potencia;
     }
+    
+    public String toString(){
+        String cadenaAMotor = super.toString();
+        cadenaAMotor += "\n" + " Potencia : " + potencia;
+        return cadenaAMotor;
+    }
 }
