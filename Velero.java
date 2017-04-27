@@ -7,24 +7,24 @@
  */
 public class Velero extends Barco
 {
-    private int numeroMastiles;
+    private int numMastiles;
     /**
      * Constructor for objects of class Velero
      */
     public Velero(String matricula , Double eslora , int ano ,Persona propietario , int numeroMastiles)
     {
         super(matricula , eslora , ano , propietario);
-        this.numeroMastiles = numeroMastiles;
+        this.numMastiles = numeroMastiles;
     }
     
     public int getCoeficienteDeBernau()
     {
-        return numeroMastiles;
+        return numMastiles;
     }
     
     public String toString(){
          String cadenaVelero = super.toString();
-         cadenaVelero += " \n" + " Numero De Mastiles : " + numeroMastiles;
+         cadenaVelero += " \n" + " Numero De Mastiles : " + numMastiles;
          return cadenaVelero;
     }
 }

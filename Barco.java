@@ -10,7 +10,7 @@ public abstract class Barco
     //variables y metodos
     private Persona propietario;
     private String matricula;
-    private Double eslora;
+    private double eslora;
     private int anoFabricacion;
 
     /**
@@ -31,7 +31,7 @@ public abstract class Barco
         return cadenaCompleta;
     }
     
-    public Double getEslora(){
+    public double getEslora(){
         return eslora;
     }
 }
