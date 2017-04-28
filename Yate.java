@@ -1,17 +1,16 @@
-
 /**
- * Write a description of class Yate here.
+ * Clase que almacena los barcos tipo yate.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author: Borja Del Valle Lopez.
+ * @version 27/04/2017.
  */
 public class Yate extends EmbarcacionAMotor
 {
     // instance variables - replace the example below with your own
     private  int numCamarotes;
-
     /**
-     * Constructor for objects of class Yate
+     * Constructor que inicializa los atributos de Yate.
+     * @param numCamarotes numero de camarotes que tiene el yate.
      */
     public Yate(String matricula , Double eslora , int ano ,Persona propietario , int potencia, int numCamarotes)
     {
@@ -19,15 +18,23 @@ public class Yate extends EmbarcacionAMotor
         this.numCamarotes = numCamarotes;
     }
 
+    /**
+     * Muestra toda la informaci0n de yate.
+     * @return cadena con la informacion de yate.
+     */
     public String toString()
     {
         String cadenaYate = super.toString();
         cadenaYate += "\n" + "Numero de Camarotes : " + numCamarotes;
         return cadenaYate;
     }
-    
-    
-        public int getCoeficienteDeBernau(){
+
+    /**
+     * Metodo que calcula el coeficiente de bernua
+     * del yate.
+     * @return un entero que es el coeficiente de bernua de yae
+     */
+    public int getCoeficienteDeBernau(){
         return numCamarotes+super.getCoeficienteDeBernau();
     }
 }
